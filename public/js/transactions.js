@@ -29,7 +29,13 @@ document
     e.target.reset() //reseta o formulário
     myModal.hide() //fecha o modal
     getTransactions()
-    alert('Lançamento adicionado com sucesso!')
+    if (type === '2' && getTotalValue(data.transactions) < 0) {
+      alert(
+        'Atenção! Seu saldo após cadastrar essa despesa será negativo, deseja continuar?'
+      )
+    } else {
+      alert('Lançamento adicionado com sucesso!')
+    }
   })
 
 checkLogged()
@@ -60,6 +66,7 @@ function logout() {
 
 function getTransactions() {
   const transactions = data.transactions
+
   let transactionsHtml = ``
 
   if (transactions.length) {
@@ -85,4 +92,16 @@ function getTransactions() {
 
 function saveData(data) {
   localStorage.setItem(data.login, JSON.stringify(data))
+}
+
+function getTotalValue(transactions) {
+  let total = 0
+  transactions.forEach(item => {
+    if (item.type === '1') {
+      total += item.value
+    } else {
+      total -= item.value
+    }
+  })
+  return total
 }
