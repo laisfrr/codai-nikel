@@ -31,6 +31,9 @@ document.getElementById('create-form').addEventListener('submit', function (e) {
   e.preventDefault() // Evita que o formulário seja enviado
   const email = document.getElementById('email-create-input').value
   const password = document.getElementById('password-create-input').value
+  const confirmPassword = document.getElementById(
+    'password-confirm-input'
+  ).value
 
   if (email.length < 5) {
     return alert('Preencha o campo com um e-mail válido')
@@ -38,6 +41,10 @@ document.getElementById('create-form').addEventListener('submit', function (e) {
 
   if (password.length < 4) {
     return alert('A senha deve conter no mínimo 4 caracteres')
+  }
+
+  if (password !== confirmPassword) {
+    return alert('As senhas não conferem')
   }
   saveAccount({ login: email, password: password, transactions: [] })
   myModal.hide()
