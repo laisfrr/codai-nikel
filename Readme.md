@@ -34,7 +34,7 @@
 <h1 align="center">🖼️ PREVIEW</h1>
 <div align="center" >
 <h4 >Tela de Login</h4>
-<img height="440px" src="./assets/images/nikel-laptop.png" title="nikel-laptop" />
+<img height="440px" src="./assets/images/nikel-Laptop.png" title="nikel-laptop" />
 <h4>Tela Home</h4>
 <img height="540px" src="./assets/images/nikel-home.png" title="home-nikel" />
 <h4>Tela Histótico de Lançamentos</h4>
