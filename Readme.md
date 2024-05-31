@@ -34,16 +34,13 @@
 <h1 align="center">🖼️ PREVIEW</h1>
 <div align="center" >
 <h4 >Tela de Login</h4>
-<img height="440px" src="./assets/images/nikel-Laptop.png" title="nikel-laptop" />
+<img height="440px" width="740" src="./assets/images/nikel-Laptop.png" title="nikel-laptop" />
 <h4>Tela Home</h4>
-<img height="540px" src="./assets/images/nikel-home.png" title="home-nikel" />
+<img height="440px" src="./assets/images/nikel-home.png" title="home-nikel" />
 <h4>Tela Histótico de Lançamentos</h4>
 <img height="440px" src="./assets/images/nikel-historico.png" title="historico-nikel" />
 <div>
 <hr>
 <h1 align="center">📱 VERSÃO MOBILE</h1>
 
-<video width="750" height="650" controls>
-
-  <source src="./assets/images/nikel.mp4" type="video/mp4">
-</video>
+![video](/assets/images/nikel.gif)
