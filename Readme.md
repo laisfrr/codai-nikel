@@ -42,4 +42,8 @@
 <div>
 <hr>
 <h1 align="center">📱 VERSÃO MOBILE</h1>
-<video controls src="./assets/images/nikel.mp4"></video>
+
+<video width="750" height="650" controls>
+
+  <source src="./assets/images/nikel.mp4" type="video/mp4">
+</video>
